@@ -333,7 +333,7 @@ useEffect(()=>{
           {showModal.showAbout &&  <About />}
           {showModal.showScore &&  <Score />}
 
-          <button onClick={backToMain}>Back</button>
+          <button className="primary-btn" onClick={backToMain}>Back</button>
       </div>
 
       <div className={showModal.showRules || showModal.showAbout || showModal.showScore ? "hidden" : "main-container"}>

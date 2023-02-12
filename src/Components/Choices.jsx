@@ -50,6 +50,6 @@ export default function Choices(props){
     })
 
     return (
-        <p>{answerButtonElements}</p>
+    <div className="choices-container">{answerButtonElements}</div>
     )
 }

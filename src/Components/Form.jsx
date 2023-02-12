@@ -32,7 +32,7 @@ export default function Form(props){
                     onChange={handleChange} 
                     value={formData.name} 
                     required/>
-                <div class="select-container">
+                <div className="select-container">
                 <select 
                     name="numOfQuestions" 
                     onChange={handleChange} 
