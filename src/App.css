@@ -293,6 +293,11 @@ select{
   padding: 0.5rem;
 }
 
+.rules{
+  height: 70vh;
+  overflow: scroll;
+}
+
 .double-bonus{
   border: 2px solid;
   width: 300px;
@@ -424,7 +429,7 @@ select{
   }
 
   .title-container h1{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .primary-btn {
@@ -438,7 +443,7 @@ select{
     .scoreboard,
     .rules,
     .about{
-      padding-top: 6em;
+      padding-top: 3em;
     }
     
   .additional-info-modal-container,
@@ -462,7 +467,7 @@ select{
 
 @media(min-width:800px){
   .title-container h1 {
-      font-size: 2.7rem;
+      font-size: 2.3rem;
   }
   .question-title {
     font-size: 1.5em;

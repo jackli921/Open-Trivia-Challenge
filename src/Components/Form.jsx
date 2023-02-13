@@ -69,8 +69,8 @@ export default function Form(props){
                     value={formData.difficulty} 
                     id="difficulty">
                     
-                    <option value="any">Any</option>
-                    <option value="easy">Easy</option>
+                    <option value="any">Any Difficulty</option>
+                    <option value="easy" selected='selected'>Easy</option>
                     <option value="medium">Medium</option>
                     <option value="hard">Hard</option>
                 </select>
@@ -79,10 +79,10 @@ export default function Form(props){
                     name="type" 
                     onChange={handleChange} 
                     value={formData.type} 
-                    id="type">
+                    id="type">``
                     
-                    <option value="any">Any</option>
-                    <option value="multiple">Multiple</option>
+                    <option value="any">Any Type</option>
+                    <option value="multiple" selected='selected`'>Multiple</option>
                     <option value="boolean">True or False</option>
                 </select>
 
