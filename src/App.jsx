@@ -308,7 +308,7 @@ useEffect(()=>{
           showAbout:false,
           showScore:false}))
     }
-
+   
 
   return (
 
@@ -319,13 +319,13 @@ useEffect(()=>{
           <Timer timer={timer} showQuestions={showQuestions}/>
       </div>
 
-
+     
       <div className={timer.isInitialTimerOn ? "pre-game-countdown-container" : 'hidden'}>
           <div>
             <p className='countdown-text'>Get Ready!</p>
             <p className='countdown-username'>{userInfo.username}</p>
           </div>
-          <p>{timer.timeRemaining}</p>
+         <p>{timer.timeRemaining}</p>
       </div>
 
       <div className = {showModal.showRules || showModal.showAbout || showModal.showScore ? "additional-info-modal-container" : "hidden"}>

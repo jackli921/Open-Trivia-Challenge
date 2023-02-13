@@ -135,9 +135,12 @@ select{
 }
 
 .pre-game-countdown-container{
-  width: 100vw;
-  height: 100vh;
+
   display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -197,7 +200,7 @@ select{
 
 
 .answer-btn{
-  min-width: 300px;
+  min-width: 350px;
   padding: 0.5em;
   margin: 0.2rem;
   font-size: 1.1rem;
@@ -210,7 +213,7 @@ select{
 }
 
 .selected-answer{
-    min-width: 300px;
+    min-width: 350px;
       padding: 0.5em;
       margin: 0.2rem;
       font-size: 1.1rem;
@@ -224,6 +227,7 @@ select{
     color: white;
     font-weight: 600;
     margin-top: 1em;
+    padding: 1em 2em;
 }
 
 .disabled{
@@ -323,7 +327,7 @@ select{
 .score-card{
   display: flex;
   justify-content: space-around;
-  font-size: 1.05rem;
+  font-size: 1.5rem;
 }
 
 .separator{

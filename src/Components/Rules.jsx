@@ -4,6 +4,7 @@ export default function Rules(){
     return (
         <div>
             <ul className="rules">
+                <h3>Rules</h3>
                 <li>+1, +2, or +3 pts for every easy, medium, or hard questions answered <span className="green">correctly</span>! </li>
                 <li>-3, -2, or -1 pts for every easy, medium, or hard questions answered <span className="red">incorrectly</span>!</li>
                 <li> <span className='yellow'>Double your points</span> for each correct answer before the bonus timer runs out </li>
