@@ -36,7 +36,7 @@ npm run dev
 - React.js, JavaScript ES6, HTML5, CSS3
 
 ## Demo
-<img src="/images/demo.gif" height=50%>
+<img src="/images/demo.gif" height=600px>
  
 ## Improvements
  Pull requests are welcome. For major changes, feel free to open an issue to discuss what you would like to change. Some ideas:
