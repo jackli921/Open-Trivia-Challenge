@@ -1,5 +1,7 @@
 
-<img src="/images/logo.png" align="center">
+<div  align="center">
+<img src="/images/logo.png">
+</div>
 
 ## Summary 
 **Open Trivia Challenge** is a resonsive, customizable quiz app that built using the Open Trivia API.
