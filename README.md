@@ -1,5 +1,5 @@
 
-![Logo](/images/logo.png)
+<img src="/images/logo.png" align="center">
 
 ## Summary 
 **Open Trivia Challenge** is a resonsive, customizable quiz app that built using the Open Trivia API.
