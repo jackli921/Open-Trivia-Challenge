@@ -14,9 +14,9 @@ The original version which had no user input, scoring system, score tracking, an
 ## Features
 1) an input form to select # of questions, categories, difficulty, and question type
 2) a triple timer system comprised of a bonus timer, a penalty timer, and an overtime penalty timer
-3) a comprehensive points system which grants or deducts points based on the time left in the above timer
+3) a points system which grants or deducts points based on the time left in the above timer
 4) a scoreboard that stores each attempt in local storage
-5) fully responsive design that scales according to screen sizes from iPhone SE (375px) to desktops (1000px or greater)  
+5) responsive design from iPhone SE (375px) to desktops (1000px or greater)  
 
 
 ## Installation
