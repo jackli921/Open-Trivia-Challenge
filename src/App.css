@@ -272,8 +272,18 @@ select{
   font-weight: bold;
 }
 
+.green-text{
+  color: #94D7A2;
+  font-weight: bold;
+}
+
 .red{
   background-color:#F8BCBC;
+}
+
+.red-text{
+  color: #F8BCBC;
+  font-weight: bold;
 }
 
 .question-container{
@@ -336,10 +346,11 @@ select{
   border-radius: 5px;
 }
 
-.yellow{
-
-  background-color: yellow;
+.yellow-text{
+  color: yellow;
+  font-weight: bold;
 }
+
 .about{
   width: 90%;
   margin: 0 auto;
