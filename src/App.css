@@ -71,9 +71,9 @@ body{
 .form{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  min-height: 500px;
+  min-height: 450px;
 }
 
 .top-container{
@@ -154,12 +154,12 @@ select{
 
 .primary-btn{
     min-width: 316px;
-    height: 40px;
     display: block;
     font-weight: 500;
     font-size: 16px;
     border-radius: 8px;
     margin: 0 auto;
+    padding: 0.3em;
 }
 
 .additional-info-btn-container{
@@ -529,10 +529,24 @@ input, .select-container>*{
   #start-btn,
   .select-container > select{
     width:500px;
+    height: 80px;
   }  
 
+  .form{
+    min-height: 700px;
+    font-size: 1.2em;
+  }
+
+  .form *{
+    margin: 0.5em auto;
+  }
+
+  #start-btn{
+    height: 100px;
+  }
+
   .title-text{
-    font-size: 3em;
+    font-size: 2.7em;
   } 
 
   .additional-info-btn-container{
@@ -541,6 +555,7 @@ input, .select-container>*{
 
   .primary-btn{
       font-size: 1.4em;
+      padding: 0.5em;
   }
 
   .score-text{
@@ -548,7 +563,7 @@ input, .select-container>*{
   }
 
   .check-answer-btn{
-    width: 300px;
+    width: 350px;
     height: 150px;
     font-size: 1.7em;
     padding: 1em 2em;

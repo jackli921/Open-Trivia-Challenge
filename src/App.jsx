@@ -321,7 +321,7 @@ useEffect(()=>{
         className={
           timer.isInitialTimerOn
             ? "pre-game-countdown-container"
-            : "pre-game-countdown-container"
+            : "hidden"
         }
       >
         <p className="countdown-text">
