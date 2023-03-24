@@ -321,14 +321,17 @@ useEffect(()=>{
         className={
           timer.isInitialTimerOn
             ? "pre-game-countdown-container"
-            : "hidden"
+            : "pre-game-countdown-container"
         }
       >
-          <p className="countdown-text">Get Ready!</p>
-        <p className="countdown-username gradient-text">
-          {userInfo.username}
+        <p className="countdown-text">
+          Get Ready!{" "}
+          <span className="countdown-username gradient-text">
+            {userInfo.username}
+          </span>
         </p>
-        <p>{timer.timeRemaining}</p>
+        
+        <h1>{timer.timeRemaining}</h1>
       </div>
 
       <div

@@ -179,18 +179,13 @@ select{
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   font-size: 3em;
   font-weight: 600;
   color: orange;
 }
 
-.countdown-username{
-  font-size: 2em;
-  margin: 0;
-  padding: 0.5em;
-}
 
 .in-game-countdown-container{
   margin: 1em auto;
@@ -313,7 +308,7 @@ select{
   background-color: #e8cfd8;
   z-index: 1;
   border-radius: 8px;
-  width: 330px;
+  width: 350px;
   padding: 10px 10px;
   font-size: 1.1em;
   border: 2px solid black;
@@ -557,5 +552,9 @@ input, .select-container>*{
     height: 150px;
     font-size: 1.7em;
     padding: 1em 2em;
+  }
+
+  .pre-game-countdown-container{
+    font-size: 5em;
   }
 }
