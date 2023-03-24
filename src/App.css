@@ -1,10 +1,12 @@
 #root {
   max-width: 1280px;
+  height: 100%;
+  width: 100%;
   margin: 0 auto;
   padding:0px;
   text-align: center;
   box-sizing: border-box;
-  color: black;
+  color: whitesmoke;
 }
 
 *{
@@ -22,10 +24,26 @@
   will-change: filter;
 }
 
+html{
+  width: 100%;
+  height: 100%;
+  background: #171821;
+}
+
 body{
   overflow: visible;
   min-width: 375px;
   margin: 0px auto;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 
 .title-container{
@@ -34,18 +52,23 @@ body{
   width: 100%;
   min-width: 400px;
   margin: 1em 50% 0px 50%;
+  max-width: 1500px;
 }
 
-.title-container h1{
-  font-size: 1.95rem
+.title-text{
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 2rem;
 }
 
-.container{
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-
+.gradient-text {
+  background: linear-gradient(to right,#6e65f1, #00d8ff);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
+
+
 
 .top-container{
   min-width: 375px;
@@ -53,7 +76,7 @@ body{
   position: fixed;
   top: 0;
   left: 0;
-  height: 140px;
+  min-height: 140px;
   display:flex;
   justify-content: center;
 }
@@ -70,8 +93,6 @@ body{
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    overflow: scroll;
-
 }
 
 .additional-info-modal-container{
@@ -80,18 +101,23 @@ body{
     width: 100%;
     height: 78vh;
     max-width: 500px;
-    overflow: scroll;
+    
     left: 50%;
     transform: translate(-50%, 0%);
+    color: whitesmoke;
 }
 
 input, .start-btn{
   width: 316px;
-  box-shadow: 4px 4px 4px darkgrey;
   height: 50px;
-  border-radius: 5px;
+  border-radius: 8px;
   text-align: center;
   font-size: 1.5em;
+}
+
+.start-btn{
+  background-color: #3e32e4;
+  color: whitesmoke;
 }
 
 .select-container{
@@ -104,12 +130,11 @@ input, .start-btn{
 }
 
 select{
-  box-shadow: 4px 4px 4px darkgrey;
   height: 50px;
   width: 150px;
   text-align: center;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 1.1em;
   margin: 0.5rem;
 }
@@ -120,9 +145,7 @@ select{
     display: block;
     font-weight: 500;
     font-size: 16px;
-    background: #4D5B9E;
-    border-radius: 15px;
-    color: white;
+    border-radius: 8px;
     margin: 0 auto;
 }
 
@@ -134,30 +157,26 @@ select{
   max-width: 500px;
 }
 
-.pre-game-countdown-container{
+.additional-info-btn-container>button{
+  background-color: #d6dbf5;
+}
 
+.pre-game-countdown-container{
+  width: 100%;
+  height: 100%;
   display: flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  font-size: 10em;
+  font-size: 3em;
+  font-weight: 600;
   color: orange;
 }
 
-.countdown-text{
-  font-size: 2.8rem;
-  font-weight: 600;
-  color: black;
-}
-
 .countdown-username{
-  font-size: 3rem;
-  font-weight: 600;
-  margin-top: 0px;
+  font-size: 2em;
+  margin: 0;
+  padding: 0.5em;
 }
 
 .in-game-countdown-container{
@@ -188,6 +207,7 @@ select{
 
 .questions-container{
   width:100%;
+  color: whitesmoke;
 }
 
 .question-title{
@@ -209,7 +229,7 @@ select{
 .answer-btn:hover{
   color: black;
   font-weight: bold;
-  background-color: orange;
+  background-color: #6e65f1
 }
 
 .selected-answer{
@@ -217,12 +237,12 @@ select{
       padding: 0.5em;
       margin: 0.2rem;
       font-size: 1.1rem;
-    background-color: #D6DBF5;
+    background-color: #6e65f1;
 }
 
 .check-answer-btn{
     background: #4D5B9E;
-    border-radius: 10px;
+    border-radius: 8px;
     margin-bottom: 1em;
     color: white;
     font-weight: 600;
@@ -241,7 +261,6 @@ select{
 
 .answer-all-questions-prompt,
 .score-text{
-  color: #293264;
   font-weight: 700;
 }
 
@@ -265,11 +284,12 @@ select{
 .difficulty-prompt{
   background-color: #e8cfd8;
   z-index: 1;
-  border-radius: 10px;
+  border-radius: 8px;
   width: 300px;
   padding: 10px 10px;
   font-size: 1.1em;
   border: 2px solid black;
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -295,7 +315,7 @@ select{
 
 .rules{
   height: 70vh;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 .double-bonus{
@@ -305,7 +325,7 @@ select{
   right: 1em;
   z-index: 2;
   background-color: yellow;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .yellow{
@@ -326,7 +346,6 @@ select{
   width: 90%;
   height: 90%;
   margin: 0 auto;
-  overflow: scroll;
 }
 
 .score-card{
@@ -336,11 +355,13 @@ select{
 }
 
 .separator{
-  border: 1px solid black;
-  border-radius: 5px;
-  max-width: 600px;
-  width: 50%;
-  margin-top: 2em;
+  border: 0.5px solid #dbdef0;
+  width: 60%;
+  margin: 3em auto;
+}
+
+input, .select-container>*{
+  background-color: whitesmoke;
 }
 
 
@@ -428,8 +449,8 @@ select{
     gap: 1em;
   }
 
-  .title-container h1{
-    font-size: 2.2rem;
+  .title-text{
+    font-size: 2.3rem;
   }
 
   .primary-btn {

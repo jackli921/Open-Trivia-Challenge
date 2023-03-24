@@ -311,55 +311,72 @@ useEffect(()=>{
    
 
   return (
-
     <div className="container">
-    
       <div className="top-container slide-right">
-          <Title isGameOn={isGameOn} />
-          <Timer timer={timer} showQuestions={showQuestions}/>
+        <Title isGameOn={isGameOn} />
+        <Timer timer={timer} showQuestions={showQuestions} />
       </div>
 
-     
-      <div className={timer.isInitialTimerOn ? "pre-game-countdown-container" : 'hidden'}>
-          <div>
-            <p className='countdown-text'>Get Ready!</p>
-            <p className='countdown-username'>{userInfo.username}</p>
-          </div>
-         <p>{timer.timeRemaining}</p>
+      <div
+        className={
+          timer.isInitialTimerOn
+            ? "pre-game-countdown-container"
+            : "hidden"
+        }
+      >
+          <p className="countdown-text">Get Ready!</p>
+        <p className="countdown-username gradient-text">
+          {userInfo.username}
+        </p>
+        <p>{timer.timeRemaining}</p>
       </div>
 
-      <div className = {showModal.showRules || showModal.showAbout || showModal.showScore ? "additional-info-modal-container" : "hidden"}>
-          {showModal.showRules &&  <Rules />}
-          {showModal.showAbout &&  <About />}
-          {showModal.showScore &&  <Score />}
+      <div
+        className={
+          showModal.showRules || showModal.showAbout || showModal.showScore
+            ? "additional-info-modal-container"
+            : "hidden"
+        }
+      >
+        {showModal.showRules && <Rules />}
+        {showModal.showAbout && <About />}
+        {showModal.showScore && <Score />}
 
-          <button className="primary-btn" onClick={backToMain}>Back</button>
+        <button className="primary-btn" onClick={backToMain}>
+          Back
+        </button>
       </div>
 
-      <div className={showModal.showRules || showModal.showAbout || showModal.showScore ? "hidden" : "main-container"}>
-          <Form 
-            callAPI={getQuestionsFromAPI} 
-            startGame={startGame} 
-            gameState={isGameOn} 
-            updateUserInfo={updateUserInfo}/>
-            
-          <AdditionalInfoBtns 
-            isGameOn={isGameOn}
-            handleOpenModal={handleOpenModal}/>
-          
-      
-          <Questions 
-            questionsArr={questionsArr} 
-            userInfo={userInfo} 
-            handleCheckAnswers={handleCheckAnswers} 
-            showQuestions={showQuestions} 
-            chooseAnswer={chooseAnswer}
-            timer={timer}/>
-      </div>
+      <div
+        className={
+          showModal.showRules || showModal.showAbout || showModal.showScore
+            ? "hidden"
+            : "main-container"
+        }
+      >
+        <Form
+          callAPI={getQuestionsFromAPI}
+          startGame={startGame}
+          gameState={isGameOn}
+          updateUserInfo={updateUserInfo}
+        />
 
-      
+        <AdditionalInfoBtns
+          isGameOn={isGameOn}
+          handleOpenModal={handleOpenModal}
+        />
+
+        <Questions
+          questionsArr={questionsArr}
+          userInfo={userInfo}
+          handleCheckAnswers={handleCheckAnswers}
+          showQuestions={showQuestions}
+          chooseAnswer={chooseAnswer}
+          timer={timer}
+        />
+      </div>
     </div>
-  )
+  );
 }
 
 export default App
