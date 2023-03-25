@@ -97,7 +97,7 @@ body{
     align-items: center;
     flex-wrap: wrap;
     max-width: 1300px;
-    top: 60%;
+    top: 63%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -128,7 +128,7 @@ input, .start-btn{
 }
 
 .select-container{
-  margin: 0.5em;
+  margin: 1rem;
   max-width: 550px;
   display: flex;
   justify-content: center;
@@ -151,6 +151,10 @@ select{
   margin: 0.5rem;
 }
 
+.countdown-text{
+  line-height: 1.5;
+}
+
 .primary-btn{
     min-width: 316px;
     display: block;
@@ -166,7 +170,7 @@ select{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.5em;
+  gap: 1rem;
   max-width: 500px;
   margin-bottom: 1em;
 }
@@ -233,6 +237,7 @@ select{
   padding: 0.5em;
   margin: 0.2rem;
   font-size: 1.1rem;
+  background: whitesmoke;
 }
 
 .answer-btn:hover{
