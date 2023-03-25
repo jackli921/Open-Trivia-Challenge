@@ -24,7 +24,6 @@ export default function Form(props){
     return (
       <div className={props.gameState ? "hidden" : "form-container slide-left"}>
         <form className="form" onSubmit={handleSubmit}>
-          
           <div className="select-container">
             <input
               type="text"
@@ -71,7 +70,7 @@ export default function Form(props){
               id="difficulty"
             >
               <option value="any">Any Difficulty</option>
-              <option value="easy" selected="selected">
+              <option value="easy">
                 Easy
               </option>
               <option value="medium">Medium</option>
@@ -84,9 +83,9 @@ export default function Form(props){
               value={formData.type}
               id="type"
             >
-              ``
+            
               <option value="any">Any Type</option>
-              <option value="multiple" selected="selected`">
+              <option value="multiple">
                 Multiple
               </option>
               <option value="boolean">True or False</option>
